@@ -1,5 +1,5 @@
-🩺 CerviCheck – Computer vision-based VIA screening with ML models trained on demographic, behavioral, and clinical data to assess cervical cancer risk.
-
+**🩺 CerviCheck – Computer vision-based VIA screening with ML models trained on demographic, behavioral, and clinical data to assess cervical cancer risk.
+**
 ![GitHub Repo stars](https://img.shields.io/github/stars/nishat09/Risk-Factor-Analysis-For-Cervical-Cancer?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/nishat09/Risk-Factor-Analysis-For-Cervical-Cancer?style=social)
 

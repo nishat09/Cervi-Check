@@ -9,6 +9,9 @@ CORS(app)
 # Load model and scaler
 model = joblib.load('best_cervical_cancer_model.pkl')
 scaler = joblib.load('scaler_cervical_cancer.pkl')
+@app.route('/', methods=['GET'])
+def home():
+    return "✅ API is running!"
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -42,4 +45,4 @@ def predict():
         return jsonify({ "error": str(e) }), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=5050)

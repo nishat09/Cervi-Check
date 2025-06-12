@@ -4,7 +4,7 @@ import About from './pages/About';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Upload from "./pages/Upload";
-import Welcome from './pages/Welcome';
+
 import RiskForm from "./pages/RiskForm";
 import ImageUpload from './pages/ImageUpload';
 import Dashboard from "./pages/Dashboard";
@@ -29,7 +29,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/welcome" element={<Welcome />} />
+      
         <Route path="/upload" element={<RiskForm />} />
         <Route path="/upload-image" element={<ImageUpload />} />
         <Route path="/dashboard" element={<Dashboard />} />

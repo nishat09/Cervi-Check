@@ -32,16 +32,20 @@ const RiskForm = () => {
   const handleSubmit = async () => {
     const updatedForm = { ...formData };
     questions.forEach(q => {
-      if (q.dependsOn && (!formData[q.dependsOn] || formData[q.dependsOn] === false)) {
+      if ((q.dependsOn && (!formData[q.dependsOn] || formData[q.dependsOn] === false)) || !(q.id in updatedForm)) {
         updatedForm[q.id] = 0;
       }
     });
 
+    console.log("Sending data:", updatedForm);
+
     try {
-      const res = await axios.post("http://localhost:8000/predict", updatedForm);
+      const res = await axios.post("http://127.0.0.1:5050/predict", updatedForm);
+      console.log("Prediction response:", res.data);
       setResult(res.data.prediction);
     } catch (err) {
       console.error("Prediction error:", err);
+      alert("Prediction failed. Please ensure the backend is running and reachable.");
     }
   };
 

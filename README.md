@@ -11,7 +11,7 @@ CerviCheck is a full-stack AI-powered web application designed to help women ass
 
 ## 🎯 Features
 
-- 📷 **VIA Screening using Deep Learning** (YOLOv9-based cervix image classifier)
+- 📷 **VIA Screening using Deep Learning** (CNN-based cervix image classifier)
 - 🧬 **Risk Factor Prediction** powered by an ensemble ML model trained on clinical, demographic & behavioral data
 - 🔐 Secure user authentication with consent-based image handling
 - 📊 Dual analysis output: Image + Risk Score
@@ -42,7 +42,7 @@ BRAC University
 
 ## 📖 Research Summary (Abstract)
 
-> "Visual Inspection of cervix with Acetic Acid (VIA) is an inexpensive and effective screening test conducted in underdeveloped and developing regions. In this research, we established a systematic VIA screening process using computer vision and machine learning. We evaluated VGG16 (96% accuracy), ResNet-50 (95%), YOLOv9 (93%), and YOLO-NAS Medium (91%) on cervix images. An ensemble model based on key features extracted using Random Forest achieved 94% accuracy in predicting risk based on clinical and behavioral data. Our system can help identify high-risk individuals, even those with VIA-negative, and aims to surpass traditional VIA accuracy."
+> "Visual Inspection of cervix with Acetic Acid (VIA) is an inexpensive and effective screening test conducted in underdeveloped and developing regions. In this research, we established a systematic VIA screening process using computer vision and machine learning. We evaluated VGG16, ResNet-50, YOLOv9, and YOLO-NAS Medium on cervix images. An ensemble model based on key features extracted using Random Forest achieved 94% accuracy in predicting risk based on clinical and behavioral data. Our system can help identify high-risk individuals, even those with VIA-negative, and aims to surpass traditional VIA accuracy."
 
 🔍 Cervical images used for this project were obtained through **official permission from Google** strictly for research purposes.
 
@@ -64,7 +64,7 @@ BRAC University
 
 **ML & Image Processing:**
 - Flask API
-- YOLOv9 for image classification
+- Fine Tuned Resnet50 for image classification
 - Random Forest + Ensemble for risk factor analysis
 
 ---
